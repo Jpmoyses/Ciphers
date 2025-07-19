@@ -1,0 +1,98 @@
+@font-face {
+    font-family: Bebas-Neue;
+    src: url(./fonts/Bebas_Neue/BebasNeue-Regular.ttf);
+}
+
+@font-face {
+  font-family: AlfaSlabOne;
+  src: url(./fonts/Alfa_Slab_One/AlfaSlabOne-Regular.ttf);
+}
+
+:root{
+    --background-color: #111827;
+}
+
+body{
+    height: 100vh;
+    background-color: var(--background-color);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.flex{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    height: 70%;
+    width: 70%;
+}
+
+.inFlex{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+
+.buttonsFlex{
+    flex-direction: column;
+    width: 30%;
+    justify-content: center;
+    gap: 30px;
+}
+
+.box{
+    height: 30ch;
+    width: 50ch;
+    border-radius: 12px;
+    border: 3px #EA5B6F solid;
+    background-color: #263555;
+    color: aliceblue;
+    font-size: 2ch;
+    font-weight: 600;
+}
+
+.newBox{
+    border: 3px #93DA97 solid;
+    font-style: italic;
+}
+
+#decipher{
+    padding: 20px;
+}
+
+.shift{
+    width: 7ch;
+    height: 50px;
+}
+
+.title{
+    color: aliceblue;
+    font-weight: 600;
+    font-size: 80px;
+    font-family: Bebas-Neue;
+}
+
+h3:hover, h5:hover, label{
+    cursor: default;
+    user-select: none;
+}
+
+h5{
+    color: aliceblue;
+    font-family: AlfaSlabOne;
+    font-size: 25px;
+}
+
+textarea{
+    padding: 15px;
+    resize: none;
+}
+
+textarea:focus{
+    box-shadow:none;
+    border-color: #f32b45;
+}
